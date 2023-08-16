@@ -22,7 +22,14 @@
       <div class="container">
         <div class="grid grid-col">
           <div>
-            <img src="images/image-product-desktop.jpg" alt="" />
+            <picture>
+              <source
+                srcset="images/image-product-mobile.jpg"
+                media="(max-width: 400px)"
+              />
+              <img src="images/image-product-desktop.jpg" alt="" />
+            </picture>
+            <!-- <img src="images/image-product-desktop.jpg" alt="" /> -->
           </div>
           <div class="wrapper">
             <p class="category">Perfume</p>
@@ -35,7 +42,15 @@
               <p class="price-sale">$149.99</p>
               <p class="price-old">$169.99</p>
             </div>
-            <button class="btn">Add to cart</button>
+            <button class="btn">
+              <span>
+                <img
+                  src="images/icon-cart.svg"
+                  alt="Icon of a basket provided by frontend Mentor"
+                />
+              </span>
+              <span>Add to cart</span>
+            </button>
           </div>
         </div>
       </div>
